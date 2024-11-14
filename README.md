@@ -45,7 +45,7 @@ Sistem mengimplementasikan pengambilan data dengan dua cara:
 - <img src="3.png" width="300px">
 
 ### 2.2 Pengambilan Data Mahasiswa Tunggal
-- Digunakan saat mengedit data mahasiswa
+- Digunakan saat mengedit data mahasiswa yang spesific
 - Implementasi:
   ```typescript
   ambilMahasiswa(id: any) {
