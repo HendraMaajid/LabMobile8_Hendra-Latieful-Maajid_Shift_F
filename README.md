@@ -51,11 +51,11 @@ Sistem mengimplementasikan dua jenis pengambilan data:
   }
   ```
 - Alur proses:
-  1. Frontend mengirim request GET ke tampil.php
-  2. Backend mengambil semua data dari database
-  3. Data dikirim kembali dalam format JSON
-  4. Frontend menerima data dan menampilkan dalam bentuk kartu
-  5. Setiap kartu menampilkan informasi:
+  - Frontend mengirim request GET ke tampil.php
+  - Backend mengambil semua data dari database
+  - Data dikirim kembali dalam format JSON
+  - Frontend menerima data dan menampilkan dalam bentuk kartu
+  - Setiap kartu menampilkan informasi:
      - Nama mahasiswa
      - Jurusan
      - Tombol Edit dan Hapus
@@ -77,11 +77,11 @@ Sistem mengimplementasikan dua jenis pengambilan data:
   }
   ```
 - Alur prosesnya:
-  1. Pengguna menekan tombol Edit pada kartu mahasiswa
-  2. Sistem mengirim request ke lihat.php dengan parameter ID mahasiswa
-  3. Backend mencari data mahasiswa berdasarkan ID
-  4. Data dikirim kembali ke frontend
-  5. Form edit ditampilkan dengan data yang sudah terisi
+  - Pengguna menekan tombol Edit pada kartu mahasiswa
+  - Sistem mengirim request ke lihat.php dengan parameter ID mahasiswa
+  - Backend mencari data mahasiswa berdasarkan ID
+  - Data dikirim kembali ke frontend
+  - Form edit ditampilkan dengan data yang sudah terisi
 - <img src="4.png" width="300px">
 
 ## 3. Update (Edit Data)
@@ -103,12 +103,12 @@ Operasi update memiliki alur sebagai berikut:
     this.api.edit(data, 'edit.php')
   ```
 - Alur proses lengkap:
-  1. Data dari form dikumpulkan dalam objek
-  2. Sistem melakukan validasi input
-  3. Data dikirim ke server menggunakan metode PUT
-  4. Backend memproses update data di database
-  5. Sistem menampilkan feedback berhasil
-  6. List mahasiswa otomatis diperbarui
+  - Data dari form dikumpulkan dalam objek
+  - Sistem melakukan validasi input
+  - Data dikirim ke server menggunakan metode PUT
+  - Backend memproses update data di database
+  - Sistem menampilkan feedback berhasil
+  - List mahasiswa otomatis diperbarui
 - <img src="4.png" width="300px">
 - <img src="5.png" width="300px">
 
@@ -140,11 +140,11 @@ Operasi hapus memiliki alur dan fitur sebagai berikut:
   ```
 - <img src="6.png" width="300px">
 - Alur proses lengkap:
-  1. Pengguna menekan tombol Hapus
-  2. Muncul dialog konfirmasi dengan 2 pilihan:
+  - Pengguna menekan tombol Hapus
+  - Muncul dialog konfirmasi dengan 2 pilihan:
      - "Batal" untuk membatalkan penghapusan
      - "Hapus" untuk melanjutkan penghapusan
-  3. Jika dikonfirmasi:
+  - Jika dikonfirmasi:
      - Sistem mengirim request DELETE ke hapus.php
      - Backend menghapus data dari database
      - Frontend memperbarui tampilan list
