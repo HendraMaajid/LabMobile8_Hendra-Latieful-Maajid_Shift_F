@@ -7,7 +7,7 @@
 ## 1. Create (Tambah Data)
 Sistem mengimplementasikan penambahan mahasiswa melalui komponen berikut:
 - Dipicu oleh tombol "Tambah Mahasiswa"
-- <img src="1.png" width="300px">
+<img src="1.png" width="300px">
 - Membuka form modal dengan field input untuk:
   - Nama Mahasiswa
   - Jurusan
@@ -21,7 +21,7 @@ Sistem mengimplementasikan penambahan mahasiswa melalui komponen berikut:
       }
       this.api.tambah(data, 'tambah.php')
   ```
-- <img src="2.png" width="300px">
+ <img src="2.png" width="300px">
 - Melakukan validasi bahwa semua field wajib telah diisi
 - Mengirim permintaan POST ke endpoint API 'tambah.php'
 - Memperbarui daftar mahasiswa setelah berhasil menambahkan
@@ -42,7 +42,7 @@ Sistem mengimplementasikan pengambilan data dengan dua cara:
   }
   ```
 - Menampilkan mahasiswa dalam bentuk kartu yang menunjukkan nama dan jurusan
-- <img src="3.png" width="300px">
+ <img src="3.png" width="300px">
 
 ### 2.2 Pengambilan Data Mahasiswa Tunggal
 - Digunakan saat mengedit data mahasiswa yang spesific
@@ -59,7 +59,7 @@ Sistem mengimplementasikan pengambilan data dengan dua cara:
     })
   }
   ```
-  - <img src="4.png" width="300px">
+   <img src="4.png" width="300px">
 
 ## 3. Update (Edit Data)
 Operasi update terdiri dari:
@@ -79,8 +79,8 @@ Operasi update terdiri dari:
 - Memperbarui daftar mahasiswa setelah berhasil mengedit
 - Termasuk validasi form
 - Menyediakan opsi untuk membatalkan
-- <img src="4.png" width="300px">
-- <img src="5.png" width="300px">
+ <img src="4.png" width="300px">
+ <img src="5.png" width="300px">
 
 ## 4. Delete (Hapus Data)
 Operasi hapus memiliki fitur:
@@ -108,10 +108,10 @@ Operasi hapus memiliki fitur:
     });
   }
   ```
-- <img src="6.png" width="300px">
+ <img src="6.png" width="300px">
 - Mengirim permintaan DELETE ke 'hapus.php'
 - Secara otomatis memperbarui daftar setelah berhasil menghapus
-- <img src="7.png" width="300px">
+ <img src="7.png" width="300px">
 
 ## Endpoint API
 
